@@ -1,0 +1,7 @@
+sounddevice
+numpy
+soundfile
+scipy
+onnxruntime
+rich
+psutil
