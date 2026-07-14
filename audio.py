@@ -6,7 +6,7 @@ import soundfile as sf
 from collections import deque
 from scipy.signal import resample_poly
 
-from .config import audio_q, command_q, db_q, tui_q
+from config import audio_q, command_q, db_q, tui_q
 
 def audio_server():
     DEVICE_SAMPLE_RATE = 44100

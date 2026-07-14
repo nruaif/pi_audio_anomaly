@@ -4,8 +4,8 @@ import gc
 import numpy as np
 import onnxruntime as ort
 
-from .config import audio_q, command_q, tui_q, memory_info
-from .utils import get_memory_mb, pairwise_distances_np, greedy_coreset_subsampling, extract_features_onnx
+from config import audio_q, command_q, tui_q, memory_info
+from utils import get_memory_mb, pairwise_distances_np, greedy_coreset_subsampling, extract_features_onnx
 
 def classifier_loop():
     onnx_path = os.path.join(os.path.dirname(__file__), 'mn10_scene_embed.onnx')

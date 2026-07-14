@@ -4,7 +4,7 @@ import io
 import queue
 import soundfile as sf
 
-from .config import db_q, tui_q, sse_clients, sse_lock
+from config import db_q, tui_q, sse_clients, sse_lock
 
 def database_writer():
     db_path = "security_logs_v2.db"

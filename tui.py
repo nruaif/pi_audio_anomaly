@@ -4,7 +4,7 @@ from rich.panel import Panel
 from rich.table import Table
 from rich.text import Text
 
-from .config import memory_info, sse_clients
+from config import memory_info, sse_clients
 
 def generate_layout():
     layout = Layout()

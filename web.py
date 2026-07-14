@@ -5,8 +5,8 @@ import sqlite3
 import os
 from http.server import ThreadingHTTPServer, BaseHTTPRequestHandler
 
-from .config import sse_clients, sse_lock, tui_q
-from .html_assets import HTML_CONTENT, MANIFEST_CONTENT, SW_CONTENT, ICON_SVG
+from config import sse_clients, sse_lock, tui_q
+from html_assets import HTML_CONTENT, MANIFEST_CONTENT, SW_CONTENT, ICON_SVG
 
 class LightweightAPIHandler(BaseHTTPRequestHandler):
     def log_message(self, format, *args):
