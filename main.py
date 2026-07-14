@@ -3,12 +3,12 @@ import time
 import queue
 from rich.live import Live
 
-from .config import tui_q, command_q, memory_info
-from .audio import audio_server
-from .classifier import classifier_loop
-from .database import database_writer
-from .web import web_server_loop
-from .tui import generate_layout, update_ui
+from config import tui_q, command_q, memory_info
+from audio import audio_server
+from classifier import classifier_loop
+from database import database_writer
+from web import web_server_loop
+from tui import generate_layout, update_ui
 
 def main():
     t_audio = threading.Thread(target=audio_server, daemon=True)
